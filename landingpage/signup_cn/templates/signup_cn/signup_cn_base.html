@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Conversational English Classes, online or in person...">
+<title>ConversationLive</title>
+
+<!-- Bootstrap core CSS -->
+<link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+
+<!-- Startup CSS -->
+<link href="{% static "css/startup.css" %}" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="{% static "images/favicon.png" %}">
+<script src="{% static "js/pace.js" %}"></script>
+
+<!-- Custom Google Font : Open Sans -->
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+</head>
+<body class="signup-h-layout">
+<div class="preloader"></div>
+<!-- Parallax Header Starts -->
+<main id="top" class="masthead" role="main">
+  <div class="container">
+    <!-- Startup Logo -->
+    <a href="{% url 'signup_kr:signup' %}" class="navbar-right"><img class="country-icon" src="{% static 'images/korea_icon.png'%}"></a>
+    <a href="{% url 'signup:signup' %}" class="navbar-right"><img class='country-icon' src="{% static 'images/america-icon.png'%}"></a>
+    <!-- Hero Title -->
+    {% block content%}
+
+    {% endblock%}
+
+
+    <!-- // Mailchimp Subscribe form Ends -->
+    <!--  Scroll to Explore -->
+    <a href="#explore" class="scrollto">
+    <p>FIND OUT WHY</p>
+    <p class="scrollto--arrow"><img src="{% static 'images/scroll_down.png' %}" alt="scroll down arrow"></p>
+    </a>
+    <!-- // Scroll to Explore Ends -->
+  </div>
+</main>
+<!-- // Parallax Header Ends -->
+<!-- Container -->
+<div class="container" id="explore">
+  <!-- Hero Image -->
+  <div class="section-title">
+    <h2>Hi! I'm Chris</h2>
+
+  </div>
+  <section class="row heroimg breath">
+    <div class="col-md-12 text-center"> <img id="myimages" src="{% static 'images/Chris.jpg'%}" alt="flat-mockup-template"></div>
+<p> <br> </p>
+
+
+
+<div class="col-md-12">
+  <div class="testblock">
+    <h4>Allow me to introduce myself</h4>
+    <p>I’ve been teaching English professionally for about 5 years in China, Korea and Canada. I believe the most important thing I can do for you is listen to what you say, and give you feedback. You can’t improve if you don’t know what you are doing wrong. <br><br>
+
+In addition to my experience, I am a graduate of Simon Fraser University’s Accounting program and I am TESOL certified, through Oxford Seminars.
+
+I teach English because I like getting to know people, travelling around the world, and learning. Whatever your English educational needs are, I want to help you succeed.
+
+I welcome you to take a free trial lesson so I can prove that my classes are worth taking.
+</p>
+  </div>
+</div>
+  </section>
+
+
+  <div class="section-title">
+    <h2>Get Feedback</h2>
+    <h4>Sign up for a free trial lesson and improve your grammar, pronunciation, vocabulary and fluency</h4>
+  </div>
+  <section class="row heroimg breath">
+    <div class="col-md-12 text-center"> <img id="myimages" src="{% static 'images/feedback_real.png'%}" alt="flat-mockup-template"></div>
+  </section>
+  <!-- //Hero Image -->
+
+  <!-- Features Section -->
+  <div class="section-title">
+    <h2>You don't need to go to America</h2>
+    <h4>You can learn from Chris on 微信</h4>
+  </div>
+  <section class="row heroimg breath">
+<div class="col-md-12 text-center">
+
+  <img id="myimages" src="{% static 'images/wechat.jpg' %}" alt="WeChat IMG not found">
+
+</div>
+
+  </section>
+  <!-- // Features Section Ends -->
+
+  <!-- Client Logos -->
+  <div class="section-title">
+    <h2>An Experienced Teacher</h2>
+    <h4>I've worked for these reputable institutions</h4>
+  </div>
+
+
+    <div class="schools">
+      <img src="{% static 'images/school-logos.jpg' %}" alt="Logo Not Found"> <br>
+
+        <img src="{% static 'images/canada-logos.jpg' %}" alt="Logo Not Found">
+    </div>
+
+
+
+  <!-- // End Client Logos -->
+
+</div>
+<!-- // Container Ends -->
+
+<!-- Grey Highlight Section -->
+<div class="highlight testimonials">
+  <div class="container">
+
+    <!-- Testimonials -->
+    <div class="section-title">
+      <h2>My students like my classes</h2>
+      <h4>This is what they have to say</h4>
+    </div>
+    <section class="row breath">
+      <div class="col-md-4">
+        <div class="testblock"> Chris is an awesome teacher. You will never feel tired or bored in his class. All the materials for spoken class are closely related to our life. He is a master of English teaching by using simple and vivid language. Also, he gives all his students much patience and love. My best foreign English teacher ever!
+Chris是一位超级棒的外教，上他的课从来不会觉得生硬无聊。因为课上的学习内容和生活息息相关。他会用简洁生动的语言让学习英语方便简单。更重要的是他对每一个学生都很有耐心，是我最喜欢的英文外教。
+
+</div>
+        <div class="clientblock">
+          <p><strong>Julia (Zhao Wenxuan)</strong> <br>
+           Taiyuan Institute of Technology <br> my student in 2017 </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testblock">Chris was my economics teacher. He is humorous and friendly. My classmates and I are enjoyed discussing some problems about economics，culture and life with him.  He is very rigorous in his teaching. He can make the dull knowledge very vivid. So we like him and he became my friend. He is the best foreign teacher I've ever met.
+Chris是我的经济老师。他既幽默又友好。我和我的同学们非常喜欢和他讨论一些经济、文化、生活相关的问题。他的教学很严谨。他能使枯燥的知识变得生动活泼。所以我们喜欢他，他成了我的朋友。他是我所见过的最好的外教。
+</div>
+        <div class="clientblock">
+          <p><strong>Allen（Yin Pengqing）</strong> <br>
+            Yangzhou Polytechnic College <br> my student in 2016</a></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testblock">Chris is a very good spoken English teacher with perfect pronunciation, which is the major reason that I find him to teach me. Then he is a patient teacher and an honest guy. Good character is very important to a teacher isn't? So I think I am fortunate to meet him as a teacher and as a friend.
+Chris是一个非常好的口语老师，他的发音很完美，这也是我找他作口语老师的主要原因。而且，他既是一个有耐心的老师，也是一个很诚实的人。对于一个老师来讲好的人品往往也很重要。所以我觉得我很幸运能和他成为师生也成为朋友。</div>
+        <div class="clientblock">
+          <p><strong>Owen (Lian Hanhua)</strong> <br>
+            Privage 1:1 IELTS Speaking Student <br> my student in 2017</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- // End Testimonials -->
+
+  </div>
+</div>
+<!-- // End Grey Highlight Section -->
+
+<!-- Container -->
+<div class="container">
+
+  <!-- Pricing -->
+  <div class="section-title">
+    <h2>Reasonable Prices</h2>
+    <h4></h4>
+  </div>
+  <section class="row breath planpricing">
+    <div class="col-md-6">
+      <div class="pricing color2">
+        <div class="planname">Group Classes</div>
+        <div class="price"> <span class="curr">¥</span>250<span class="per">/month</span></div>
+        <div class="billing">4 classes per month (1hour)</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="pricing color1">
+        <div class="planname">One on One</div>
+        <div class="price"> <span class="curr">¥</span>200<span class="per">/hour</span></div>
+        <div class="billing">Class by Class (1 hour)</div>
+      </div>
+    </div>
+
+  </section>
+  <!-- // End Pricing -->
+
+  <!-- FAQ -->
+  <div class="section-title">
+    <h5>Frequently Asked Questions</h5>
+  </div>
+  <section class="row faq breath">
+    <div class="col-md-6">
+      <h6>How can I improve my English for free?</h6>
+      <p>Improving your English takes time and effort. You need to be willing to invest your time into self studying vocabulary and grammar. After that, I recommend practicing with a friend. Some other great ways are to read English books, listen to English music and watch English television. </p>
+      <h6>How long is your free trial class?</h6>
+      <p>Usually the trial lesson lasts about 20 minutes</p>
+    </div>
+    <div class="col-md-6">
+      <h6>What is your refund policy?</h6>
+      <p>I offer a full refund for all unused classes. No questions asked.</p>
+      <h6>Where can I meet you?</h6>
+      <p>You can take my classes over WeChat.</p>
+    </div>
+  </section>
+  <!-- // End FAQ -->
+
+</div>
+<!-- // Container Ends -->
+
+<!-- Parallax Footer Starts -->
+<main class="footercta" role="main">
+  <div class="container">
+
+    <!-- Hero Title -->
+    <h1>Sometimes it's hard to <strong>tell</strong> why you should take a class.<br>
+      So how about I  <strong>show</strong> you?</h1>
+    <!-- Mailchimp Subscribe form -->
+    <div class="row">
+      <div class="col-md-12 breath text-center"> <a href="#top" class="btn btn-success btn-lg gototop">Sign up for a free trial class today!</a> </div>
+    </div>
+  </div>
+</main>
+<!-- // Parallax Footer Ends -->
+
+<!-- Container -->
+<div class="container">
+  <section class="row breath">
+
+      <p>&copy; 2018 ConversationLive Inc. All Rights Reserved</p>
+    </div>
+  </section>
+  <!-- // End Client Logos -->
+
+</div>
+<!-- // Container Ends -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static "js/jquery.js" %}"></script>
+<script src="{% static "js/bootstrap.js" %}"></script>
+<script src="{% static "js/easing.js" %}"></script>
+<script src="{% static "js/typer.js" %}"></script>
+<script src="{% static "js/nicescroll.js" %}"></script>
+
+<!-- Typer -->
+
+<script>
+    $(function () {
+      $('[data-typer-targets]').typer();
+    });
+  </script>
+
+<!-- Scroll to Explore -->
+
+<script>
+
+
+ $(function() {
+    $('.scrollto, .gototop').bind('click',function(event){
+		 var $anchor = $(this);
+		 $('html, body').stop().animate({
+         scrollTop: $($anchor.attr('href')).offset().top
+          }, 1500,'easeInOutExpo');
+     event.preventDefault();
+      });
+  });
+
+
+</script>
+
+
+
+</body>
+</html>

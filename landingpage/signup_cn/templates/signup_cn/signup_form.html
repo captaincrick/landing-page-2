@@ -1,0 +1,37 @@
+{% extends "signup_cn/signup_cn_base.html" %}
+
+{% block content%}
+
+<h1>How can I <span data-typer-targets="improve my English, get better at English, be more fluent in English, get a higher IELTS score,">get a higher IELTS speaking score</span>?<br></h1>
+<!-- Mailchimp Subscribe form -->
+<div class="row">
+  <div class="col-md-12 subscribe">
+    <div class="signup-block">
+    <div class="row">
+      <h2>Sign up for a free trial lesson with Chris</h2>
+      <form class="form-horizontal" role="form" id="subscribeForm" method="POST">
+      <div class="col-sm-2">
+
+              {{form.name}}
+        </div>
+        <div class="col-sm-2">
+              {{form.wechat}}
+        </div>
+        <div class="col-sm-2">
+              {{form.phone_number}}
+        </div>
+        <div class="col-sm-3">
+              {{form.email}}
+        </div>
+        <div class="col-sm-3">
+            {% csrf_token %}
+
+          <button type="submit" class="btn btn-warning btn-block btn-lg">SIGNUP NOW</button>
+        </div>
+    </form>
+  </div>
+    <span id="result" class="alertMsg"></span> </div>
+    </div>
+</div>
+
+{% endblock %}
